@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meow Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <header>
+        <img src="Meow.png" alt="Meow Club Logo" class="logo">
+        <nav>
+            <ul class="nav-list">
+                <li><button class="nav-button" onclick="navigateTo('home')">Home</button></li>
+                <li><button class="nav-button" onclick="navigateTo('profile')">Pet Profiles</button></li>
+                <li><button class="nav-button" onclick="navigateTo('services')">Pet Services</button></li>
+                <li><button class="nav-button" onclick="navigateTo('about')">About Us</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Welcome to Meow Club</h1>
+        <p>FurEver keeping pet's happy.</p>
+        <div class="image-card">
+            <img src="puppy1.JPG" alt="Cute Puppy 1" style="width: 200px; height: 250px;">
+            <button class="animal-button" onclick="handleClick('Dog')">Dog</button>
+        </div>
+        <div class="image-card">
+            <img src="puppy3.JPG" alt="Cute Puppy 3" style="width: 200px; height: 250px;">
+            <button class="animal-button" onclick="handleClick('Cat')">Cat</button>
+        </div>
+    </section>
+
+    <!-- Profile Creation Section -->
+    <section id="create-profile" style="display:none;">
+        <h2>Create Profile for Your Pet</h2>
+        <form id="pet-profile-form">
+            <label for="petName">Name:</label>
+            <input type="text" id="petName" name="petName" required>
+
+            <label for="petAge">Age:</label>
+            <input type="number" id="petAge" name="petAge" required>
+
+            <label for="petBreed">Breed:</label>
+            <input type="text" id="petBreed" name="petBreed" required>
+
+            <label for="petGender">Gender:</label>
+            <select id="petGender" name="petGender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+
+            <label for="petNeutered">Neutered/Spayed:</label>
+            <select id="petNeutered" name="petNeutered" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+
+            <label for="petEnvironment">Environment:</label>
+            <select id="petEnvironment" name="petEnvironment" required>
+                <option value="Indoor">Indoor</option>
+                <option value="Outdoor">Outdoor</option>
+            </select>
+
+            <button type="submit">Create Profile</button>
+        </form>
+    </section>
+
+    <!-- Vaccination History Section -->
+    <section id="vaccination-history" style="display:none;">
+        <h2>Your Pet's Vaccination History</h2>
+        <div id="pet-details">
+            <h3 id="petNameTitle"></h3>
+            <p id="petInfo"></p>
+        </div>
+        <div>
+            <h3>Vaccinations:</h3>
+            <ul id="vaccinationList"></ul>
+        </div>
+        <button onclick="addVaccination()">Add Vaccination Record</button>
+    </section>
+
+    <!-- Pet Profiles Section -->
+    <section id="profile" style="display:none;">
+        <h2>Pet Profiles</h2>
+        <p>Here you can find detailed profiles of pets.</p>
+        <div id="petProfilesList"></div>
+    </section>
+
+    <!-- Pet Services Section -->
+    <section id="services" style="display:none;">
+        <h2>Pet Services</h2>
+        <p>Choose from the available services for your pet:</p>
+        <ul class="services-list">
+            <li><button class="service-button" onclick="alert('You selected Vaccination Services')">Vaccination</button></li>
+            <li><button class="service-button" onclick="alert('You selected Doctor Consultation')">See a Doctor</button></li>
+            <li><button class="service-button" onclick="alert('You selected Grooming Services')">Grooming</button></li>
+            <li><button class="service-button" onclick="alert('You selected Training Services')">Training</button></li>
+        </ul>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" style="display:none;">
+        <h2>About Us</h2>
+        <p>Learn more about the Meow Club and our mission to care for your pets.</p>
+        <p>Email: <a href="mailto:noname@meowclub.com">noname@meowclub.com</a></p>
+        <p>Phone: <a href="tel:+18880001234">888-000-1234</a></p>
+        <p>Address: 0 University Dr NW, Calgary, AB T0K103</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Meow Club</p>
+    </footer>
+</body>
+</html>

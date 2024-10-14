@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdf2e9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffcec7;
+    padding: 10px;
+    text-align: center;
+}
+
+.logo {
+    max-width: 150px;
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 0;
+}
+
+.nav-button {
+    background-color: white;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #ffcec7;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffcec7;
+    padding: 10px;
+    text-align: center;
+}
+
+.image-card {
+    text-align: center;
+    margin: 20px;
+    display: inline-block;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.animal-button, .service-button {
+    background-color: #ffcec7;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.animal-button:hover, .service-button:hover {
+    background-color: #ffa07a;
+}
+
+#pet-profile-form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#petProfilesList .profile-card {
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.services-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.services-list li {
+    margin: 10px 0;
+}
+
+
+button.add-vaccine {
+    background-color: #ffcec7;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.add-vaccine:hover {
+    background-color: #ffa07a;
+}
